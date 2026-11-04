@@ -521,6 +521,7 @@ with st.sidebar:
         label_visibility="collapsed",
         width="stretch",
     )
+    page = page or "Study overview"
     st.divider()
     st.caption("Divya · 00702102026")
     st.caption("Indira Gandhi Delhi Technical University for Women")

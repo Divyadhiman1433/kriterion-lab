@@ -4,6 +4,28 @@ Kriterion is an auditable machine-learning mini-project that connects feature se
 
 The project is designed for academic evaluation and live explanation. It is not a diagnostic system. Its central question is whether a smaller measurement space can retain classification signal while first-principles optimizers remain numerically consistent with standard library implementations.
 
+## Live application and demo
+
+The deployed application is available at [kriterion.streamlit.app](https://kriterion.streamlit.app).
+
+[![Animated preview of the Kriterion Streamlit application](docs/media/demo-preview.gif)](docs/media/kriterion-demo.mp4)
+
+Select the animated preview to open the full 1440×900 MP4 walkthrough. The recording covers all five views, including the feature-selection tabs, logistic feature-strategy controls, convergence curves, mathematical audit trail, and experiment manifest.
+
+## Interface walkthrough
+
+| Study overview | Feature-selection comparison |
+|---|---|
+| ![Kriterion study overview with datasets and headline metrics](docs/media/overview.png) | ![Feature-selection accuracy and ROC-AUC comparison](docs/media/feature-selection.png) |
+
+| Selected-variable matrix | Linear-regression analysis |
+|---|---|
+| ![Feature membership across selection strategies](docs/media/feature-details.png) | ![OLS and gradient-descent regression comparison](docs/media/linear-regression.png) |
+
+| Logistic-regression evidence | Reproducibility audit trail |
+|---|---|
+| ![Classification metrics, confusion matrix, and ROC curve](docs/media/logistic-regression.png) | ![Mathematical objectives and experiment manifest](docs/media/reproducibility.png) |
+
 ## Study design
 
 Two bundled scikit-learn datasets keep the experiment reproducible without a download step.
