@@ -1,0 +1,17 @@
+.DS_Store
+.coverage
+.pytest_cache/
+.ruff_cache/
+.streamlit/secrets.toml
+.venv/
+__pycache__/
+artifacts/
+tmp/
+*.egg-info/
+*.py[cod]
+~$*.pptx
+build/
+dist/
+htmlcov/
+
+
