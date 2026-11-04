@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this project, cite the software using this metadata."
+title: "Kriterion Lab: Auditable Feature Selection and Scratch Optimization"
+type: software
+version: 0.1.0
+date-released: 2026-11-04
+authors:
+  - family-names: Divya
+    affiliation: "Indira Gandhi Delhi Technical University for Women"
+license: MIT
+keywords:
+  - machine learning
+  - feature selection
+  - linear regression
+  - logistic regression
+  - Streamlit
+
