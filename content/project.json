@@ -1,0 +1,103 @@
+{
+  "project": {
+    "name": "Kriterion",
+    "subtitle": "An Auditable Clinical Prediction Laboratory",
+    "title": "Feature Selection and Scratch Optimization for Clinical Prediction",
+    "purpose": "Compare dimensionality reduction and first-principles optimization on two reproducible clinical datasets while exposing every training signal and evaluation decision.",
+    "author": "Divya",
+    "roll_number": "00702102026",
+    "institution": "Indira Gandhi Delhi Technical University for Women",
+    "theme": "zinc",
+    "seed": 42
+  },
+  "datasets": {
+    "classification": {
+      "name": "Wisconsin Diagnostic Breast Cancer",
+      "samples": 569,
+      "features": 30,
+      "target": "Malignant or benign diagnosis",
+      "role": "Feature selection and binary classification"
+    },
+    "regression": {
+      "name": "Diabetes progression",
+      "samples": 442,
+      "features": 10,
+      "predictor": "Standardized body-mass-index feature",
+      "target": "One-year disease progression score",
+      "role": "One-variable OLS and batch gradient descent"
+    }
+  },
+  "research_questions": [
+    "How much classification performance is retained when 30 tumour descriptors are reduced to 10?",
+    "Does batch gradient descent converge to the same one-variable linear solution as analytical OLS?",
+    "Can a scratch logistic model remain competitive across statistically, recursively, and tree-selected feature subsets?"
+  ],
+  "presentation": [
+    {
+      "slide": 1,
+      "title": "Feature Selection and Scratch Optimization for Clinical Prediction",
+      "display": [
+        "Institution name and transparent university mark at the top",
+        "Project title in the middle",
+        "Kriterion subtitle, Divya, and roll number 00702102026"
+      ],
+      "visual": "Warm white academic title field with navy typography and a restrained teal rule"
+    },
+    {
+      "slide": 2,
+      "title": "One pipeline connects selection, optimization, and evidence",
+      "display": [
+        "Two-dataset rationale and sample counts",
+        "Train-only preprocessing and deterministic split",
+        "Visual pipeline from measurements to feature subsets to scratch models to metrics"
+      ],
+      "visual": "Horizontal process map with two dataset entry points"
+    },
+    {
+      "slide": 3,
+      "title": "Feature reduction preserves the signal with fewer measurements",
+      "display": [
+        "All features, chi-square, RFE, and random-forest importance",
+        "Accuracy and ROC-AUC comparison",
+        "Selected-feature overlap and the strongest trade-off"
+      ],
+      "visual": "Paired comparison chart plus compact overlap matrix"
+    },
+    {
+      "slide": 4,
+      "title": "Gradient descent recovers the analytical regression solution",
+      "display": [
+        "OLS equations beside batch-gradient update rules",
+        "Observed points with both fit lines",
+        "MSE convergence and RMSE, MAE, and R-squared comparison"
+      ],
+      "visual": "Fit line and log-scaled convergence curve as the primary evidence"
+    },
+    {
+      "slide": 5,
+      "title": "Transparent optimization makes the classification trade-offs defensible",
+      "display": [
+        "Sigmoid, BCE, and batch update flow",
+        "Confusion matrix and ROC curve for the recommended subset",
+        "Explicit threshold and observed error profile"
+      ],
+      "visual": "ROC curve paired with a confusion matrix and compact equation panel"
+    },
+    {
+      "slide": 6,
+      "title": "Synthesis, limitations, and reproducibility",
+      "display": [
+        "Feature reduction, optimizer agreement, and classification evidence",
+        "Experimental limitations and non-diagnostic scope",
+        "Reproducible source, tests, figures, app, report, and deck"
+      ],
+      "visual": "Three measured findings above a limitations statement and reproducibility band"
+    }
+  ],
+  "limitations": [
+    "The datasets are educational benchmarks and do not represent deployment-ready clinical validation.",
+    "RFE and embedded selection are fit on training data only, but a single held-out split cannot quantify all sampling uncertainty.",
+    "The one-feature regression task is intentionally interpretable and does not claim to be the strongest possible diabetes predictor.",
+    "The application is an explanatory research interface, not a diagnostic device."
+  ]
+}
